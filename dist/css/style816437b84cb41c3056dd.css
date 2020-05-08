@@ -1,0 +1,4 @@
+@font-face{font-family:"Open Sans";font-weight:300;src:url(/static/fonts/OpenSans-Light.woff2) format("woff2"),url(/static/fonts/OpenSans-Light.woff) format("woff"),url(/static/fonts/OpenSans-Light.ttf) format("ttf")}@font-face{font-family:"Open Sans";font-weight:400;src:url(/static/fonts/OpenSans-Regular.woff2) format("woff2"),url(/static/fonts/OpenSans-Regular.woff) format("woff"),url(/static/fonts/OpenSans-Regular.ttf) format("ttf")}@font-face{font-family:"Open Sans";font-weight:600;src:url(/static/fonts/OpenSans-SemiBold.woff2) format("woff2"),url(/static/fonts/OpenSans-SemiBold.woff) format("woff"),url(/static/fonts/OpenSans-SemiBold.ttf) format("ttf")}html body{font-family:"Open Sans", Arial, Helvetica, sans-serif;font-weight:300}
+
+.hello-world-button{font-size:"20px";padding:7px 15px;background:red;color:white;outline:none}.hello-world-text{color:red;font-weight:bold;line-height:1}
+

@@ -9,7 +9,7 @@ module.exports = {
   output: {
     filename: "js/bundle[contenthash].js",
     path: path.resolve(__dirname, "./dist"),
-    publicPath: "" // on production this will be the domain name
+    publicPath: "/static/"
   },
   mode: "production",
   resolve: {
@@ -51,13 +51,25 @@ module.exports = {
             plugins: ["transform-class-properties"]
           }
         }
+      },
+      {
+        test: /\.(woff|woff2|ttf)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]", // this will preserver the name and the extension
+              outputPath: "fonts/" // will be transpile in dist/fonts folder
+            }
+          }
+        ]
       }
     ]
   },
   plugins: [
     new TerserPlugin({ cache: true }),
     new MiniCssExtractPlugin({
-      filename: "./css/style[contenthash].css"
+      filename: "css/style[contenthash].css"
     }),
     new CleanWebpackPlugin({
       cleanOnceBeforeBuildPatterns: [

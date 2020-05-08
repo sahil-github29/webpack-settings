@@ -56,6 +56,18 @@ module.exports = {
             plugins: ["transform-class-properties"]
           }
         }
+      },
+      {
+        test: /\.(woff|woff2|ttf)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]", // this will preserver the name and the extension
+              outputPath: "fonts/" // will be transpile in dist/fonts folder
+            }
+          }
+        ]
       }
     ]
   },
