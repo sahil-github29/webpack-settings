@@ -4,7 +4,7 @@ export default () => {
   const img = document.createElement("img");
   img.src = HappyImg;
   img.alt = "img";
-  img.width = 300;
+  img.width = 400;
 
   const body = document.querySelector("body");
   body.appendChild(img);
