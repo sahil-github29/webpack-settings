@@ -1,7 +1,7 @@
-import "./index.scss";
+import './index.scss';
 
-import addfile from "./add-file";
-import HelloWorldButton from "./components/hello-world-button/hello-world-button";
+import addfile from './add-file';
+import HelloWorldButton from './components/hello-world-button';
 
 const helloWorldButton = new HelloWorldButton();
 
